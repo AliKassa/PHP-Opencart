@@ -1,0 +1,8 @@
+<form name="payment" method="post" action="{{ action }}" accept-charset="UTF-8">
+
+	{% for name, value in params %}
+		<input type="hidden" name="{{ name }}" value="{{ value }}">
+	{% endfor %}
+
+	<input type="submit" value="{{ button_confirm }}" class="btn btn-primary">
+</form>
